@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('./log11') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1{
+   text-align-last:  center;
+
+
+color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.stopwatch {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.time-display {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #e67e22;
+}
+
+#currentTime {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.laps-container {
+    margin-top: 20px;
+    max-height: 200px; /* Set a maximum height for the laps container */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+    border: 1px solid #ccc; /* Optional: add a border for better visibility */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+#lapTimes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#lapTimes li {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#showMoreLapsBtn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showMoreLapsBtn:hover {
+    background-color: #e67e22;
+}
